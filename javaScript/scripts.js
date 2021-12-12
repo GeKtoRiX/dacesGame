@@ -5,13 +5,20 @@ playerTwoThrow(player2);
 
 if(player1 < player2){
   document.querySelector(".winner").innerHTML = "Player 2 win!";
+  document.querySelectorAll("h3")[1].classList.add("winner-dice");
+  document.querySelectorAll("h3")[1].innerHTML = "Winner";
+  document.querySelectorAll("h3")[0].style.padding= "13px";
 }
 else if(player1 > player2)
 {
   document.querySelector(".winner").innerHTML = "Player 1 win!";
+  document.querySelectorAll("h3")[0].classList.add("winner-dice");
+  document.querySelectorAll("h3")[0].innerHTML = "Winner";
+  document.querySelectorAll("h3")[1].style.padding = "13px";
 }
 else{
-  document.querySelector(".winner").innerHTML = "No one win!";
+  document.querySelector(".winner").innerHTML = "No one win";
+  document.querySelector(".winner-img").style.display = "none";
 }
 
 function reloadPage(){
@@ -40,7 +47,6 @@ function playerOneThrow(player1) {
   } else if (player1 === 4) {
     oneToFive();
     document.querySelector(".firstDice .dot-3").style.visibility = "hidden";
-    document.querySelector(".firstDice .dot-6").style.display = "none";
   } else if (player1 === 3) {
     oneToFive();
     document.querySelector(".firstDice .dot-2").style.visibility = "hidden";
