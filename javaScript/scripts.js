@@ -14,6 +14,10 @@ else{
   document.querySelector(".winner").innerHTML = "No one win!";
 }
 
+function reloadPage(){
+  location.reload();
+}
+
 function playerOneThrow(player1) {
 
   function oneToFive() {
