@@ -1,0 +1,56 @@
+body {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 44, 141, 1) 45%, rgba(0, 212, 255, 1) 100%);
+  color: #FFC93C;
+}
+
+header{
+  padding-top: 50px;
+}
+
+.container-top{
+  margin-top: 30px;
+}
+
+.container-middle{
+  margin-top: 10%;
+}
+
+.winner {
+  display: inline-block;
+}
+
+.winner-img{
+  width: 50px;
+}
+
+.player-1 {
+  /* text-align: right; */
+}
+
+.player-2 {
+  /* text-align: left; */
+}
+
+.dice {
+  margin: 15px auto;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.dot {
+  display: inline-block;
+  margin: 10px;
+  background-color: white;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.dot-4, .dot-5, .dot-6{
+  margin-top: 80px;
+}
