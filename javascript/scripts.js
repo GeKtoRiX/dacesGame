@@ -4,23 +4,25 @@ var player2 = Math.trunc((Math.random() * 6) + 1);
 playerTwoThrow(player2);
 
 if(player1 < player2){
-  document.querySelector(".winner").innerHTML = "Player 2 win!";
-  document.querySelectorAll("h3")[1].classList.add("winner-dice");
-  document.querySelectorAll("h3")[1].innerHTML = "Winner";
-  document.querySelectorAll("h3")[0].style.padding= "13px";
   document.querySelector(".winner-img").style.display = "inline-block";
+  document.querySelector(".winner").innerHTML = "Player 2 win!";
+  document.querySelectorAll("h3")[1].innerHTML = "Winner";
+  document.querySelectorAll("h3")[1].classList.add("winner-dice");
+  document.querySelector(".player-1 h3").style.marginTop = "2px";
 }
 else if(player1 > player2)
 {
-  document.querySelector(".winner").innerHTML = "Player 1 win!";
-  document.querySelectorAll("h3")[0].classList.add("winner-dice");
-  document.querySelectorAll("h3")[0].innerHTML = "Winner";
-  document.querySelectorAll("h3")[1].style.padding = "13px";
   document.querySelector(".winner-img").style.display = "inline-block";
+  document.querySelector(".winner").innerHTML = "Player 1 win!";
+  document.querySelectorAll("h3")[0].innerHTML = "Winner";
+  document.querySelectorAll("h3")[0].classList.add("winner-dice");
+  document.querySelector(".player-2 h3").style.marginTop = "2px";
 }
 else{
   document.querySelector(".winner").innerHTML = "No one win";
   document.querySelector(".winner-img").style.display = "none";
+  document.querySelector(".player-1 h3").style.marginTop = "2px";
+  document.querySelector(".player-2 h3").style.marginTop = "2px";
 }
 
 function reloadPage(){

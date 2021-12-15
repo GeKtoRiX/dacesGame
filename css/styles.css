@@ -18,6 +18,10 @@ header{
   margin-top: 10%;
 }
 
+.col-6{
+  /* border: 1px solid red; */
+}
+
 .container-middle h3{
   display: inline-block;
   padding: 10px;
@@ -47,15 +51,15 @@ header{
 .winner-dice{
   padding: 10px;
   border-radius: 10px;
-  border: 3px solid #FFC93C;
+  border: 1px solid #FFC93C;
 }
 
-.player-1 {
-  /* text-align: right; */
+.player-1 h3{
+  /* border: 1px solid red; */
 }
 
-.player-2 {
-  /* text-align: left; */
+.player-2 h3 {
+  /* border: 1px solid red; */
 }
 
 .dice {
@@ -80,4 +84,33 @@ header{
 
 .dot-4, .dot-5, .dot-6{
   margin-top: 80px;
+}
+
+@media (max-width: 768px){
+
+  .my-style{
+    top: 54%;
+    left: 80%;
+    width: 60px;
+    height: 50px;
+  }
+
+  .my-style span {
+    font-size: 14px;
+  }
+}
+
+@media(min-width: 1024px){
+  .my-style{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%));
+    width: 60px;
+    height: 50px;
+  }
+
+  .my-style span {
+    font-size: 14px;
+  }
+}
 }
