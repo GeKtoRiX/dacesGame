@@ -40,6 +40,7 @@ header{
 }
 
 .winner-img{
+  display: none;
   width: 50px;
 }
 
